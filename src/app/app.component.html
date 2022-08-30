@@ -1,0 +1,39 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<h1>Password Generator</h1>
+<div>
+  <label> enter length</label>
+  <input />
+  <div>
+    <div>
+      <label> Use Letters</label>
+      <input type="checkbox" />
+      <div>
+        <div>
+          <label> enter numbers</label>
+          <input type="checkbox" />
+          <div>
+            <div>
+              <label> enter symbolls</label>
+              <input type="checkbox" />
+              <div>
+                <div>
+                  <button (click)="onButtonClick()">Genrate!</button>
+                  <div>
+                    <base />
+                    <label>Your Password</label>
+                    <input [value]="password" />
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ password }}
+</div>
